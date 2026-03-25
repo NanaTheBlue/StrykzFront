@@ -1,9 +1,6 @@
 name = "strykzfront"
 compatibility_date = "2026-03-24"
 
-[build]
-  command = "npm run build"
-  upload = "./dist"
 
 [assets]
   directory = "./dist/"
