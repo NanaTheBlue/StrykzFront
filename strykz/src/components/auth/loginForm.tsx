@@ -40,29 +40,39 @@ export default function Login() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Login</h2>
+    <div className="w-full h-full flex flex-col items-center justify-center">
+      <form
+        className="flex flex-col max-w-100 w-100 bg-blue-700 rounded-b-md p-3"
+        onSubmit={handleSubmit}
+      >
+        <h2 className="pb-4 m-0">Login</h2>
+        <div className="gap-3 flex flex-col items-center">
+          <input
+            name="email"
+            type="email"
+            placeholder="Email"
+            value={form.email}
+            onChange={handleChange}
+            className="bg-[#16171d]"
+            required
+          />
+          <input
+            name="password"
+            type="password"
+            placeholder="Password"
+            value={form.password}
+            onChange={handleChange}
+            className="bg-[#16171d]"
+            required
+          />
 
-      <input
-        name="email"
-        type="email"
-        placeholder="Email"
-        value={form.email}
-        onChange={handleChange}
-        required
-      />
-      <input
-        name="password"
-        type="password"
-        placeholder="Password"
-        value={form.password}
-        onChange={handleChange}
-        required
-      />
+          <button className="max-w-3xs" type="submit">
+            Login
+          </button>
 
-      <button type="submit">Login</button>
-
-      {error && <p style={{ color: "red" }}>{error}</p>}
-    </form>
+          {error && <p style={{ color: "red" }}>{error}</p>}
+        </div>
+      </form>
+    </div>
   );
 }

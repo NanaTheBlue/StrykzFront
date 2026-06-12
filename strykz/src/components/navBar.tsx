@@ -9,7 +9,7 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="navbar flex  gap-4 list-none">
+    <nav className="navbar flex  gap-4 list-none fixed">
       <ul className="list-none">
         {navItems.map((item) => (
           <NavLink to={item.route}>
