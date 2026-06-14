@@ -40,9 +40,9 @@ export default function Login() {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center">
+    <div className="w-full h-dvh flex flex-col items-center justify-center">
       <form
-        className="flex flex-col max-w-100 w-100 bg-blue-700 rounded-b-md p-3"
+        className="flex flex-col max-w-100 w-75 bg-blue-700 rounded-md p-2"
         onSubmit={handleSubmit}
       >
         <h2 className="pb-4 m-0">Login</h2>

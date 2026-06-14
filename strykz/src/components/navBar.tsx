@@ -13,7 +13,7 @@ export default function NavBar() {
       <ul className="list-none">
         {navItems.map((item) => (
           <NavLink to={item.route}>
-            <li className="p-4" key={item.id}>
+            <li className="p-4 hover:bg-amber-50" key={item.id}>
               <i className={`bi ${item.icon} text-3xl`}></i>
             </li>
           </NavLink>
