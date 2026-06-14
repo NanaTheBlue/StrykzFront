@@ -4,13 +4,14 @@ import Register from "./components/auth/registerForm";
 import NavBar from "./components/navBar";
 
 import "./App.css";
+import Home from "./Home";
 
 function App() {
   return (
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/play" element={<h2>Page not found</h2>} />
